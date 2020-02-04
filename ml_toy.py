@@ -203,8 +203,13 @@ if 'Decision Tree' in model_sb and st.checkbox('Draw tree', False):
     )
     st.pyplot()
 
+st.write('---')
 st.button('reload')
 
+st.write('''
+---
+P.S. This app is completely open-source: https://github.com/hocop/ML-Toy
+''')
 
 
 
