@@ -119,7 +119,8 @@ st.pyplot()
 st.sidebar.header('Configure model')
 lines = open('models.json').read()
 models = json.loads(lines)
-model_sb = st.sidebar.selectbox(
+st.header('Model')
+model_sb = st.selectbox(
     'Select a model',
     [name for name in models if models[name]['type'] == task_sb]
 )
@@ -151,7 +152,6 @@ model = {}(**params)
            import_what,
     )
 
-st.header('Model')
 st.write('Configure your model on the left sidebar')
 st.write('Your code:')
 st.write('```python\n' + model_code + '\n```')
