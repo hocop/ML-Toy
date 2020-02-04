@@ -1,0 +1,120 @@
+{
+    "Linear Regression": {
+        "type": "Regression",
+        "import": "sklearn.linear_model.LinearRegression",
+        "params": {
+            "fit_intercept": [true, false]
+        }
+    },
+    "SVM Regression": {
+        "type": "Regression",
+        "import": "sklearn.svm.SVR",
+        "params": {
+            "C": {"from": 0.01, "to": 100.0, "default": 1.0},
+            "kernel": ["rbf", "poly", "linear", "sigmoid"]
+        }
+    },
+    "K Nearest Neighbors Regression": {
+        "type": "Regression",
+        "import": "sklearn.neighbors.KNeighborsRegressor",
+        "params": {
+            "n_neighbors": {"from": 1, "to": 30, "default": 5}
+        }
+    },
+    "Decision Tree Regression": {
+        "type": "Regression",
+        "import": "sklearn.tree.DecisionTreeRegressor",
+        "params": {
+            "criterion": ["mse", "friedman_mse", "mae"],
+            "max_depth": {"from": 1, "to": 30, "default": 30},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Random Forest Regression": {
+        "type": "Regression",
+        "import": "sklearn.ensemble.RandomForestRegressor",
+        "params": {
+            "n_estimators": {"from": 1, "to": 100, "default": 100},
+            "criterion": ["mse", "friedman_mse", "mae"],
+            "max_depth": {"from": 1, "to": 100, "default": 100},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Gradient Boosting Regression": {
+        "type": "Regression",
+        "import": "sklearn.ensemble.GradientBoostingRegressor",
+        "params": {
+            "n_estimators": {"from": 1, "to": 100, "default": 100},
+            "max_depth": {"from": 1, "to": 30, "default": 3},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Neural Network Regression": {
+        "type": "Regression",
+        "import": "sklearn.neural_network.MLPRegressor",
+        "params": {
+            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8]],
+            "activation": ["relu", "tanh", "logistic", "identity"]
+        }
+    },
+    
+    "Logistic Regression": {
+        "type": "Classification",
+        "import": "sklearn.linear_model.LogisticRegression",
+        "params": {
+            "C": {"from": 0.01, "to": 20.0, "default": 1.0}
+        }
+    },
+    "SVM Classifier": {
+        "type": "Classification",
+        "import": "sklearn.svm.SVC",
+        "params": {
+            "C": {"from": 0.01, "to": 100.0, "default": 1.0},
+            "kernel": ["rbf", "poly", "linear", "sigmoid"],
+            "probability": [false, true]
+        }
+    },
+    "K Nearest Neighbors Classifier": {
+        "type": "Classification",
+        "import": "sklearn.neighbors.KNeighborsClassifier",
+        "params": {
+            "n_neighbors": {"from": 1, "to": 30, "default": 5}
+        }
+    },
+    "Decision Tree Classifier": {
+        "type": "Classification",
+        "import": "sklearn.tree.DecisionTreeClassifier",
+        "params": {
+            "criterion": ["gini", "entropy"],
+            "max_depth": {"from": 1, "to": 30, "default": 30},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Random Forest Classifier": {
+        "type": "Classification",
+        "import": "sklearn.ensemble.RandomForestClassifier",
+        "params": {
+            "n_estimators": {"from": 1, "to": 100, "default": 100},
+            "criterion": ["gini", "entropy"],
+            "max_depth": {"from": 1, "to": 100, "default": 100},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Gradient Boosting Classifier": {
+        "type": "Classification",
+        "import": "sklearn.ensemble.GradientBoostingClassifier",
+        "params": {
+            "n_estimators": {"from": 1, "to": 100, "default": 100},
+            "max_depth": {"from": 1, "to": 30, "default": 3},
+            "min_samples_split": {"from": 2, "to": 10, "default": 2}
+        }
+    },
+    "Neural Network Classifier": {
+        "type": "Classification",
+        "import": "sklearn.neural_network.MLPClassifier",
+        "params": {
+            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8]],
+            "activation": ["relu", "tanh", "logistic", "identity"]
+        }
+    }
+}
