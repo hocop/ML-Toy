@@ -8,7 +8,7 @@ You can play with model parameters and see what happens:
 ![Screenshot 1](screenshots/Screenshot_2.png)
 
 ## Try it online
-App is deployed here: https://ml-toy.herokuapp.com/
+App is deployed here: https://share.streamlit.io/hocop/ml-toy/ml_toy.py
 
 ## Run locally
 ```
