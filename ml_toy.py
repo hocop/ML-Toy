@@ -112,7 +112,7 @@ def plot_dataset(axes, alpha=0.5):
 
 fig, axes = plt.subplots(1, 2, figsize=(10,5))
 plot_dataset(axes)
-st.pyplot()
+st.pyplot(fig)
 
 
 # Select model
@@ -183,7 +183,7 @@ elif task_sb == 'Regression':
     axes[0].plot(X, y, alpha=0.8, linewidth=2, color='red', label=import_what)
     axes[1].plot(X, y, alpha=0.8, linewidth=2, color='red', label=import_what)
     plot_dataset(axes)
-st.pyplot()
+st.pyplot(fig)
 
 # Print metrics
 predictions = model.predict(X_test)
@@ -208,7 +208,7 @@ st.button('reload')
 
 st.write('''
 ---
-P.S. This app is completely open-source: https://github.com/hocop/ML-Toy
+P.S. This app is open-source: https://github.com/hocop/ML-Toy
 ''')
 
 
