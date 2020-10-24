@@ -115,7 +115,7 @@
         "type": "Classification",
         "import": "sklearn.neural_network.MLPClassifier",
         "params": {
-            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8]],
+            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8], [32], [32,32], [32,32,32], [32,32,32,32]],
             "activation": ["relu", "tanh", "logistic", "identity"]
         }
     }
