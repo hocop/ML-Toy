@@ -152,7 +152,7 @@ model = {}(**params)
            import_what,
     )
 
-st.markdown('*Configure your model on the left sidebar*')
+st.markdown('**Configure your model on the left sidebar**')
 st.write('Your code:')
 st.write('```python\n' + model_code + '\n```')
 
