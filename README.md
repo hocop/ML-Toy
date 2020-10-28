@@ -3,9 +3,9 @@ A small application in which you can play with very simple machine learning task
 I hope it will help you understand better how machine learning models work.  
 
 It allows you to create a simple 2D dataset and choose one of many sklearn models:
-![Screenshot 1](screenshots/Screenshot_1.png)
+![Screenshot 1](screenshots/mltoy_1.png)
 You can play with model parameters and see what happens:
-![Screenshot 1](screenshots/Screenshot_2.png)
+![Screenshot 1](screenshots/mltoy_2.png)
 
 ## Try it online
 App is deployed here: https://share.streamlit.io/hocop/ml-toy/ml_toy.py
