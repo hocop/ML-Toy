@@ -19,4 +19,4 @@ It will start running on localhost. The browser window should open automaticaly.
 `Procfile` and `setup.sh` are only for heroku, normally you don't need them.
 
 ## How it is made
-Backend and frontend are written in pure python using [streamlit](https://www.streamlit.io/) - a python library for simple data science demos like this. This is my first project with streamlit. I made it to learn myself how to use this library.
+Backend and frontend are written in python using [streamlit](https://www.streamlit.io/) - a python library for simple data science demos like this. This is my first project with streamlit. I made it to learn myself how to use this library.
