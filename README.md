@@ -1,4 +1,6 @@
 # ML-Toy
+https://share.streamlit.io/hocop/ml-toy/ml_toy.py
+
 A small application in which you can play with very simple machine learning tasks.  
 I hope it will help you understand better how machine learning models work.  
 
