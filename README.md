@@ -1,4 +1,4 @@
-# ML-Toy
+# ML-Toy [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/hocop/ml-toy/ml_toy.py)
 https://share.streamlit.io/hocop/ml-toy/ml_toy.py
 
 A small application in which you can play with very simple machine learning tasks.  
