@@ -112,7 +112,7 @@ def plot_dataset(axes, alpha=0.5):
 
 fig, axes = plt.subplots(1, 2, figsize=(10,5))
 plot_dataset(axes)
-st.pyplot()
+st.pyplot(fig)
 
 
 # Select model
@@ -174,8 +174,8 @@ if task_sb == 'Classification':
             Z = model.predict(X_map).reshape(X.shape[:2])
     else:
         Z = model.predict(X_map).reshape(X.shape[:2])
-    axes[0].pcolormesh(X,Y,Z, cmap='coolwarm', alpha=0.5)
-    axes[1].pcolormesh(X,Y,Z, cmap='coolwarm', alpha=0.5)
+    axes[0].pcolormesh(X,Y,Z, cmap='coolwarm', alpha=0.5, shading='auto')
+    axes[1].pcolormesh(X,Y,Z, cmap='coolwarm', alpha=0.5, shading='auto')
 elif task_sb == 'Regression':
     # Plot
     X = np.linspace(X_test.min(), X_test.max(), 1000).reshape([-1, 1])
@@ -183,7 +183,7 @@ elif task_sb == 'Regression':
     axes[0].plot(X, y, alpha=0.8, linewidth=2, color='red', label=import_what)
     axes[1].plot(X, y, alpha=0.8, linewidth=2, color='red', label=import_what)
     plot_dataset(axes)
-st.pyplot()
+st.pyplot(fig)
 
 # Print metrics
 predictions = model.predict(X_test)
