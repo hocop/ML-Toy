@@ -45,7 +45,7 @@ df_function = dataset_functions[task_sb][function_sb]
 st.sidebar.header('Configure dataset')
 num_samples = st.sidebar.slider('Number of samples', 10, 1000, 100)
 noise = st.sidebar.slider('Amount of noise in training set', 0.0, 1.0, 0.0)
-coef = st.slider('K coefficient', 0.0, 10.0, 2.0)
+coef = st.slider('Dataset complexity (effect depends on the chosen dataset)', 0.0, 10.0, 2.0)
 feature0 = st.sidebar.text_input('Name of feature 0', 'Age')
 if task_sb == 'Classification':
     feature1 = st.sidebar.text_input('Name of feature 1', 'Income')
@@ -152,7 +152,7 @@ model = {}(**params)
            import_what,
     )
 
-st.write('Configure your model on the left sidebar')
+st.markdown('**Configure your model on the left sidebar**')
 st.write('Your code:')
 st.write('```python\n' + model_code + '\n```')
 
@@ -208,7 +208,7 @@ st.button('reload')
 
 st.write('''
 ---
-P.S. This app is completely open-source: https://github.com/hocop/ML-Toy
+P.S. This app is open-source: https://github.com/hocop/ML-Toy
 ''')
 
 

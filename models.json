@@ -11,6 +11,7 @@
         "import": "sklearn.svm.SVR",
         "params": {
             "C": {"from": 0.01, "to": 100.0, "default": 1.0},
+            "gamma": {"from": 0.0, "to": 10.0, "default": 1.0},
             "kernel": ["rbf", "poly", "linear", "sigmoid"]
         }
     },
@@ -70,8 +71,9 @@
         "import": "sklearn.svm.SVC",
         "params": {
             "C": {"from": 0.01, "to": 100.0, "default": 1.0},
+            "gamma": {"from": 0.0, "to": 10.0, "default": 0.5},
             "kernel": ["rbf", "poly", "linear", "sigmoid"],
-            "probability": [false, true]
+            "probability": [true, false]
         }
     },
     "K Nearest Neighbors Classifier": {
@@ -113,7 +115,7 @@
         "type": "Classification",
         "import": "sklearn.neural_network.MLPClassifier",
         "params": {
-            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8]],
+            "hidden_layer_sizes": [[8], [8,8], [8,8,8], [8,8,8,8], [32], [32,32], [32,32,32], [32,32,32,32]],
             "activation": ["relu", "tanh", "logistic", "identity"]
         }
     }
